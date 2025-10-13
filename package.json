@@ -1,0 +1,24 @@
+{
+  "name": "codex",
+  "version": "1.0.0",
+  "description": "f",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayansalameh/codex-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rayansalameh/codex-/issues"
+  },
+  "homepage": "https://github.com/rayansalameh/codex-#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14"
+  }
+}
