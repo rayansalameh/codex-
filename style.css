@@ -1,0 +1,67 @@
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+        * {
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        .vanta-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        .rotate-3d {
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+        
+        .rotate-3d:hover {
+            transform: rotateY(15deg) rotateX(10deg);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        
+        .service-card:hover {
+            transform: perspective(1000px) rotateY(10deg);
+            box-shadow: 0 20px 30px rgba(0, 255, 100, 0.2);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(45deg, #00ff88, #00cc66, #00aa55);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .project-modal {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .project-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    

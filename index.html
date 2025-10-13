@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Codex - رواد تصميم المواقع الإلكترونية
+    </title>
+    <link href="/static/favicon.ico" rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js">
+    </script>
+    <script src="https://unpkg.com/feather-icons">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js">
+    </script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-black text-white min-h-screen">
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full bg-black/90 backdrop-blur-md z-50 border-b border-green-600/30">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-3 rotate-3d">
+                    <span class="text-black font-bold text-xl">
+       C
+      </span>
+                </div>
+                <span class="text-xl font-bold gradient-text">
+      CODEX
+     </span>
+            </div>
+            <div class="hidden md:flex items-center space-x-6 space-x-reverse">
+                <a class="hover:text-green-400 transition" href="#services">
+      خدماتنا
+     </a>
+                <a class="hover:text-green-400 transition" href="#about">
+      من نحن
+     </a>
+                <a class="hover:text-green-400 transition" href="#why-us">
+      لماذا نحن؟
+     </a>
+                <a class="hover:text-green-400 transition" href="#projects">
+      مشاريعنا
+     </a>
+                <a class="hover:text-green-400 transition" href="#contact">
+      اتصل بنا
+     </a>
+            </div>
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <div class="hidden md:flex items-center space-x-4 space-x-reverse">
+                    <a class="flex items-center hover:text-green-400" href="tel:+1234567890">
+                        <i class="w-5 h-5 ml-1" data-feather="phone">
+       </i>
+                        <span>
+        0996778447
+       </span>
+                    </a>
+                    <a class="flex items-center hover:text-green-400" href="mailto:info@codex.com">
+                        <i class="w-5 h-5 ml-1" data-feather="mail">
+       </i>
+                        <span>
+        info@codex.com
+       </span>
+                    </a>
+                </div>
+                <button class="md:hidden">
+      <i class="w-6 h-6" data-feather="menu">
+      </i>
+     </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="vanta-bg" id="vanta-bg">
+        </div>
+        <div class="container mx-auto px-4 z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-right">
+                    <div class="floating mb-8">
+                        <div class="w-48 h-48 mx-auto md:mx-0 md:ml-auto bg-gradient-to-br from-green-500 to-black rounded-3xl flex items-center justify-center shadow-2xl shadow-green-500/30 rotate-3d">
+                            <span class="text-6xl font-bold text-white">
+         CODEX
+        </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 text-center md:text-right">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                        نحن نبني
+                        <span class="gradient-text">
+        تجارب رقمية
+       </span> استثنائية
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto md:mr-0">
+                        شركة Codex تقدم حلولاً مبتكرة في تصميم وتطوير المواقع الإلكترونية التي تحول أفكارك إلى واقع ملموس
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-end space-y-4 sm:space-y-0 sm:space-x-4 sm:space-x-reverse">
+                        <a class="flex items-center justify-center bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg transition" href="https://t.me/codex_company">
+                            <i class="w-5 h-5 ml-2" data-feather="send">
+        </i>
+                            <span>
+         تواصل عبر Telegram
+        </span>
+                        </a>
+                        <a class="flex items-center justify-center bg-[#25D366] hover:bg-[#20bd5d] text-white py-3 px-6 rounded-lg transition" href="https://wa.me/0996778447">
+                            <i class="w-5 h-5 ml-2" data-feather="message-circle">
+        </i>
+                            <span>
+         تواصل عبر WhatsApp
+        </span>
+                        </a>
+                    </div>
+                    <div class="mt-12 text-center">
+                        <a class="inline-flex items-center text-green-400 hover:text-green-300 transition" href="#about">
+                            <span>
+         تعرف على المزيد عنا
+        </span>
+                            <i class="w-5 h-5 mr-2 animate-bounce" data-feather="arrow-down">
+        </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="py-20 bg-gradient-to-b from-black to-gray-900" id="services">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                خدماتنا
+                <span class="gradient-text">
+      المتميزة
+     </span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-800 p-6 rounded-xl border border-green-600/20 hover:border-green-500/40">
+                    <div class="w-full h-48 mb-4 rounded-lg overflow-hidden">
+                        <img alt="متاجر إلكترونية" class="w-full h-full object-cover" src="Online Shopping Background Generative Ai _ Premium AI-generated image.jpg" />
+                    </div>
+                    <div class="w-16 h-16 bg-green-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto md:mx-0 md:mr-auto">
+                        <i class="w-8 h-8 text-green-500" data-feather="shopping-bag">
+       </i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        متاجر إلكترونية
+                    </h3>
+                    <p class="text-gray-400">
+                        نصمم متاجر إلكترونية متكاملة مع أنظمة دفع آمنة وإدارة للمخزون وتجربة مستخدم ممتازة لتحقيق أعلى معدلات التحويل. نضمن لك متجراً سريعاً، آمناً، ومتوافقاً مع محركات البحث.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
+        WooCommerce
+       </span>
+                        <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
+        Shopify
+       </span>
+                        <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
+        Magento
+       </span>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-800 p-6 rounded-xl border border-green-600/20 hover:border-green-500/40">
+                    <div class="w-full h-48 mb-4 rounded-lg overflow-hidden">
+                        <img alt="مواقع تعريفية" class="w-full h-full object-cover" src="c1cac11f-985f-4f98-a247-c57865b0b196.jpg" />
+                    </div>
+                    <div class="w-16 h-16 bg-green-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto md:mx-0 md:mr-auto">
+                        <i class="w-8 h-8 text-green-500" data-feather="globe">
+       </i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        مواقع تعريفية
+                    </h3>
+                    <p class="text-gray-400">
+                        نصنع مواقع تعريفية جذابة تعبر عن هوية علامتك التجارية وتقدم معلوماتك بأسلوب عصري واحترافي يلفت انتباه زوارك. تصميم متجاوب، تحسين لمحركات البحث، وتجربة مستخدم لا تُنسى.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
+        WordPress
+       </span>
+                        <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
+        React
+       </span>
+                        <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
+        Vue.js
+       </span>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-800 p-6 rounded-xl border border-green-600/20 hover:border-green-500/40">
+                    <div class="w-full h-48 mb-4 rounded-lg overflow-hidden">
+                        <img alt="منصات تعليمية" class="w-full h-full object-cover" src="http://static.photos/education/320x240/103" />
+                    </div>
+                    <div class="w-16 h-16 bg-green-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto md:mx-0 md:mr-auto">
+                        <i class="w-8 h-8 text-green-500" data-feather="book-open">
+       </i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        منصات تعليمية
+                    </h3>
+                    <p class="text-gray-400">
+                        نطور منصات تعليمية متكاملة تدعم الفصول الافتراضية، نظام إدارة المحتوى، الاختبارات الإلكترونية ومتابعة تقدم الطلاب. حلول متكاملة للتعليم عن بعد تلبي احتياجات العصر الحديث.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
+        LMS
+       </span>
+                        <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
+        Zoom API
+       </span>
+                        <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
+        Moodle
+       </span>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card bg-gray-800 p-6 rounded-xl border border-green-600/20 hover:border-green-500/40">
+                    <div class="w-full h-48 mb-4 rounded-lg overflow-hidden">
+                        <img alt="أنظمة المدارس" class="w-full h-full object-cover" src="Lily _ Dribbble.jpg" />
+                    </div>
+                    <div class="w-16 h-16 bg-green-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto md:mx-0 md:mr-auto">
+                        <i class="w-8 h-8 text-green-500" data-feather="users">
+       </i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">
+                        أنظمة المدارس
+                    </h3>
+                    <p class="text-gray-400">
+                        نصمم أنظمة متكاملة تربط بين المدرسة وأولياء الأمور لمتابعة الدرجات، الحضور، الجدول الدراسي والإعلانات المهمة. نظام شامل يحسن التواصل ويسهل إدارة العملية التعليمية.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
+        SMS
+       </span>
+                        <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
+        Parent Portal
+       </span>
+                        <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
+        Gradebook
+       </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Showcase Section -->
+    <section class="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                مشاريعنا
+                <span class="gradient-text">
+      السابقة
+     </span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="rounded-xl overflow-hidden border border-green-600/30">
+                    <img alt="متجر إلكتروني" class="w-full h-64 object-cover" src="image1.png" />
+                </div>
+                <div class="rounded-xl overflow-hidden border border-green-600/30">
+                    <img alt="موقع تعريفي" class="w-full h-64 object-cover" src="imag2e.png" />
+                </div>
+                <div class="rounded-xl overflow-hidden border border-green-600/30">
+                    <img alt="منصة تعليمية" class="w-full h-64 object-cover" src="image.png" />
+                </div>
+            </div>
+            <div class="text-center max-w-3xl mx-auto">
+                <p class="text-xl text-gray-300 mb-8">
+                    في Codex، نحن فخورون بمشاريعنا السابقة التي تعكس تنوع خبراتنا وإبداع فريقنا. من المتاجر الإلكترونية المتكاملة إلى المواقع التعريفية الاحترافية والمنصات التعليمية المتقدمة، كل مشروع يمثل قصة نجاح لعميل سعيد. نؤمن بالجودة والابتكار في كل خطوة نخطوها، ونضع
+                    رضا العملاء في مقدمة أولوياتنا.
+                </p>
+                <p class="text-xl text-gray-300">
+                    تصفح معرض أعمالنا لترى كيف يمكننا تحويل أفكارك إلى واقع رقمي مذهل يلبي جميع توقعاتك ويتجاوزها.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section class="py-20 bg-gradient-to-b from-gray-900 to-black" id="about">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                من
+                <span class="gradient-text">
+      نحن
+     </span> ؟
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="w-full h-96 bg-gradient-to-br from-green-600 to-black rounded-3xl overflow-hidden">
+                        <img alt="Codex Team" class="w-full h-full object-cover" src="http://static.photos/technology/640x360/42" />
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-green-500 rounded-full flex items-center justify-center border-4 border-black">
+                        <span class="text-black font-bold text-2xl">
+        CODEX
+       </span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 gradient-text">
+                        رواد في عالم التصميم الرقمي
+                    </h3>
+                    <p class="text-gray-300 mb-4">
+                        Codex هي شركة رائدة في مجال تصميم وتطوير المواقع الإلكترونية والتطبيقات، تأسست برؤية واضحة لتحويل الأفكار الإبداعية إلى واقع رقمي ملموس. نحن نؤمن بأن كل مشروع هو قصة فريدة تستحق أن تُروى بأسلوب استثنائي.
+                    </p>
+                    <p class="text-gray-300 mb-6">
+                        مع فريق من المطورين والمصممين المحترفين الذين يمتلكون سنوات من الخبرة في أحدث التقنيات، نقدم حلولاً مبتكرة تلبي احتياجات العملاء في مختلف القطاعات. نحن لا نصنع مواقع فقط، بل نصنع تجارب مستخدم استثنائية تترك أثراً دائماً.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold gradient-text mb-2">
+                                50+
+                            </div>
+                            <div class="text-gray-400">
+                                مشروع ناجح
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold gradient-text mb-2">
+                                3+
+                            </div>
+                            <div class="text-gray-400">
+                                سنوات خبرة
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold gradient-text mb-2">
+                                98%
+                            </div>
+                            <div class="text-gray-400">
+                                رضا العملاء
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold gradient-text mb-2">
+                                24/7
+                            </div>
+                            <div class="text-gray-400">
+                                دعم فني
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-green-500/20 text-green-400 px-4 py-2 rounded-full">
+        إبداع
+       </span>
+                        <span class="bg-green-500/20 text-green-400 px-4 py-2 rounded-full">
+        احترافية
+       </span>
+                        <span class="bg-green-500/20 text-green-400 px-4 py-2 rounded-full">
+        ابتكار
+       </span>
+                        <span class="bg-green-500/20 text-green-400 px-4 py-2 rounded-full">
+        جودة
+       </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Us Section -->
+    <section class="py-20 bg-black relative overflow-hidden" id="why-us">
+        <div class="vanta-bg" id="vanta-waves">
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                لماذا
+                <span class="gradient-text">
+      تختارنا
+     </span> لبناء موقعك؟
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-gray-900/70 backdrop-blur-md p-6 rounded-xl border border-green-600/30">
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">
+                        هل موقعي سيعمل على جميع الأجهزة؟
+                    </h3>
+                    <p class="text-gray-300">
+                        نعم! جميع مواقعنا مصممة لتكون متجاوبة بالكامل وتعمل بشكل
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
