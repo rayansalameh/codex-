@@ -5,6 +5,10 @@
             font-family: 'Tajawal', sans-serif;
         }
         
+        html {
+            scroll-padding-top: 56px; /* match your navbar height */
+        }
+
         .vanta-bg {
             position: absolute;
             width: 100%;
@@ -16,6 +20,13 @@
             animation: float 6s ease-in-out infinite;
         }
         
+        a {
+            cursor: pointer;
+        }
+
+        .nav-link {
+            font-size: 16px;
+        }
         @keyframes float {
             0% {
                 transform: translateY(0px);

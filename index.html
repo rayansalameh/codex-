@@ -7,6 +7,7 @@
     <title>
         Codex - رواد تصميم المواقع الإلكترونية
     </title>
+    <script src="main.js" defer></script>"
     <link href="/static/favicon.ico" rel="icon" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com">
     </script>
@@ -39,22 +40,22 @@
       CODEX
      </span>
             </div>
-            <div class="hidden md:flex items-center space-x-6 space-x-reverse">
-                <a class="hover:text-green-400 transition" href="#services">
+            <div class="hidden md:flex items-center space-x-6 space-x-reverse nav-links-container">
+                <a class="hover:text-green-400 transition nav-link" data-id="services">
       خدماتنا
      </a>
-                <a class="hover:text-green-400 transition" href="#about">
+                <a class="hover:text-green-400 transition nav-link" data-id="about">
       من نحن
      </a>
-                <a class="hover:text-green-400 transition" href="#why-us">
+                <a class="hover:text-green-400 transition nav-link" data-id="why-us">
       لماذا نحن؟
      </a>
-                <a class="hover:text-green-400 transition" href="#projects">
+                <a class="hover:text-green-400 transition nav-link" data-id="projects">
       مشاريعنا
-     </a>
-                <a class="hover:text-green-400 transition" href="#contact">
+     <!-- </a>
+                <a class="hover:text-green-400 transition nav-link" data-id="contact">
       اتصل بنا
-     </a>
+     </a> -->
             </div>
             <div class="flex items-center space-x-4 space-x-reverse">
                 <div class="hidden md:flex items-center space-x-4 space-x-reverse">
@@ -65,11 +66,11 @@
         0996778447
        </span>
                     </a>
-                    <a class="flex items-center hover:text-green-400" href="mailto:info@codex.com">
+                    <a class="flex items-center hover:text-green-400" >
                         <i class="w-5 h-5 ml-1" data-feather="mail">
        </i>
                         <span>
-        info@codex.com
+        codesxteam@gmail.com
        </span>
                     </a>
                 </div>
@@ -122,7 +123,7 @@
                         </a>
                     </div>
                     <div class="mt-12 text-center">
-                        <a class="inline-flex items-center text-green-400 hover:text-green-300 transition" href="#about">
+                        <a class="inline-flex items-center text-green-400 hover:text-green-300 transition" id="learn-more">
                             <span>
          تعرف على المزيد عنا
         </span>
@@ -161,13 +162,13 @@
                     </p>
                     <div class="mt-4 flex flex-wrap gap-2">
                         <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
-        WooCommerce
+        لوحة تحكم بالمنتجات
        </span>
                         <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
-        Shopify
+        سلة مشتريات
        </span>
                         <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
-        Magento
+        نظام خصومات
        </span>
                     </div>
                 </div>
@@ -188,13 +189,13 @@
                     </p>
                     <div class="mt-4 flex flex-wrap gap-2">
                         <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
-        WordPress
+        معرض
        </span>
                         <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
-        React
+        صفحة تعريفية
        </span>
                         <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
-        Vue.js
+        نبذة
        </span>
                     </div>
                 </div>
@@ -215,13 +216,13 @@
                     </p>
                     <div class="mt-4 flex flex-wrap gap-2">
                         <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
-        LMS
+        نظام رفع
        </span>
                         <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
-        Zoom API
+        نظام متابعة طلاب
        </span>
                         <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
-        Moodle
+        لوحة تحكم بالكورسات
        </span>
                     </div>
                 </div>
@@ -242,13 +243,13 @@
                     </p>
                     <div class="mt-4 flex flex-wrap gap-2">
                         <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
-        SMS
+        تواصل مباشر مع الأهالي
        </span>
                         <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
-        Parent Portal
+        نتائج الاختبارات
        </span>
                         <span class="bg-green-500/20 text-green-400 text-sm px-3 py-1 rounded-full">
-        Gradebook
+        جدول علامات
        </span>
                     </div>
                 </div>
@@ -256,7 +257,7 @@
         </div>
     </section>
     <!-- Projects Showcase Section -->
-    <section class="py-20 bg-gradient-to-b from-black to-gray-900">
+    <section class="py-20 bg-gradient-to-b from-black to-gray-900" id="projects">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
                 مشاريعنا
@@ -279,9 +280,6 @@
                 <p class="text-xl text-gray-300 mb-8">
                     في Codex، نحن فخورون بمشاريعنا السابقة التي تعكس تنوع خبراتنا وإبداع فريقنا. من المتاجر الإلكترونية المتكاملة إلى المواقع التعريفية الاحترافية والمنصات التعليمية المتقدمة، كل مشروع يمثل قصة نجاح لعميل سعيد. نؤمن بالجودة والابتكار في كل خطوة نخطوها، ونضع
                     رضا العملاء في مقدمة أولوياتنا.
-                </p>
-                <p class="text-xl text-gray-300">
-                    تصفح معرض أعمالنا لترى كيف يمكننا تحويل أفكارك إلى واقع رقمي مذهل يلبي جميع توقعاتك ويتجاوزها.
                 </p>
             </div>
         </div>
@@ -319,7 +317,7 @@
                     <div class="grid grid-cols-2 gap-6 mb-6">
                         <div class="text-center">
                             <div class="text-3xl font-bold gradient-text mb-2">
-                                50+
+                                4+
                             </div>
                             <div class="text-gray-400">
                                 مشروع ناجح
@@ -327,7 +325,7 @@
                         </div>
                         <div class="text-center">
                             <div class="text-3xl font-bold gradient-text mb-2">
-                                3+
+                                2+
                             </div>
                             <div class="text-gray-400">
                                 سنوات خبرة
@@ -335,7 +333,7 @@
                         </div>
                         <div class="text-center">
                             <div class="text-3xl font-bold gradient-text mb-2">
-                                98%
+                                100%
                             </div>
                             <div class="text-gray-400">
                                 رضا العملاء
@@ -385,7 +383,31 @@
                         هل موقعي سيعمل على جميع الأجهزة؟
                     </h3>
                     <p class="text-gray-300">
-                        نعم! جميع مواقعنا مصممة لتكون متجاوبة بالكامل وتعمل بشكل
+                        نعم! جميع مواقعنا مصممة لتكون متجاوبة بالكامل وتعمل بشكل مثالي على جميع الأجهزة و القياسات.
+                    </p>
+                </div>
+                <div class="bg-gray-900/70 backdrop-blur-md p-6 rounded-xl border border-green-600/30">
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">
+                        هل تقدمون دعمًا فنيًا بعد إطلاق الموقع؟
+                    </h3>
+                    <p class="text-gray-300">
+                        نعم! نحن نوفر دعمًا مستمرًا لضمان عمل موقعك بسلاسة، ونساعدك في أي تحديثات أو استفسارات تقنية.
+                    </p>
+                </div>
+                <div class="bg-gray-900/70 backdrop-blur-md p-6 rounded-xl border border-green-600/30">
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">
+                        هل يمكنني تعديل الموقع لاحقًا؟
+                    </h3>
+                    <p class="text-gray-300">
+                        نعم! يمكنك تعديل المحتوى والتصميم في أي وقت بسهولة، 
+                    </p>
+                </div>
+                <div class="bg-gray-900/70 backdrop-blur-md p-6 rounded-xl border border-green-600/30">
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">
+                        هل سيكون الموقع سريع التحميل؟
+                    </h3>
+                    <p class="text-gray-300">
+                        نعم! نستخدم تقنيات حديثة لضمان سرعة تحميل عالية وأداء ممتاز في جميع الظروف.
                     </p>
                 </div>
             </div>
